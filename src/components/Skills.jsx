@@ -46,7 +46,7 @@ export default function Skills() {
         },
     ]
     return (
-        <div className="skills-section">
+        <div id="skills" className="skills-section">
             <h1 className="title">Skills</h1>
             <SkillsLoop skills={skills1} />
             <SkillsLoop skills={skills2} reversed={true} />

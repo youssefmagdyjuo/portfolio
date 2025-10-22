@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
     return (
-        <div className='container'>
+        <div id='about' className='about_Container'>
         <h1 className='title'>About <span className='text-[var(--white)]'>Me</span></h1>
         <div className="aboutSections">
             <section className='Education'>

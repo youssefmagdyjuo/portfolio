@@ -17,11 +17,11 @@ export default function NavBar() {
         <div className='nav_Container'>
         <nav>
             <div className='logo'>Logo</div>
-            <ul className={ul_active?'ul_active':''}>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul onClick={()=>{set_ul_active(!ul_active)}} className={ul_active?'ul_active':''}>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <span onClick={()=>{set_ul_active(!ul_active)}}  className='navBar_button'>=</span>
             <button><a href="../youssefMagdyResume.pdf" download>Resume</a></button>

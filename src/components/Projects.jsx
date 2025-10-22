@@ -19,8 +19,8 @@ export default function Projects() {
         }
     ]
     return (
-        <>
-            <h2 className='title my-12'>Projects</h2>
+        <div id='projects'>
+            <h2 className='title '>Projects</h2>
             <div className='projects_Container'>
                 <div className="projectsCardsContainer">
                     {
@@ -45,6 +45,6 @@ export default function Projects() {
                     }
                 </div>
             </div>
-        </>
+        </div>
     )
 }

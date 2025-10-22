@@ -2,7 +2,7 @@ import React from 'react'
 import EyeFollow from './EyeFollow'
 export default function Header() {
     return (
-        <div className='header_Container'>
+        <div className='header_Container' id='header'>
             <div className='name'>I’m Youssef Magdy</div>
             <div className='flex'>
                 <div className="Front-end">

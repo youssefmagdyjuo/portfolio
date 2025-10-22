@@ -15,14 +15,6 @@ body {
     font-family: "Crimson Text", serif;
     background-color: var(--cafee-color);
 }
-.container{
-width: var(--wlg);
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 2rem 0;
-}
 button {
     padding: 0.5rem 1rem;
     background-color: var(--cafee-color);
@@ -33,6 +25,9 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+button:hover {
+    background-color: rgb(220, 201, 156);
+}
 .title{
     font-size: 2rem;
     font-weight: bold;
@@ -40,6 +35,7 @@ button {
     margin-bottom: 2rem;
     color: var(--primary-color);
     text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.167);
+    padding-top: 5rem;
 }
 .eye {
     position: relative;
@@ -92,7 +88,7 @@ button {
     align-items: center;
     position: fixed;
     width: 100%;
-    z-index: 2;
+    z-index: 10;
 }
 
 nav {
@@ -120,18 +116,28 @@ nav ul {
     gap: 2rem;
     transition: color 0.3s ease;
 
+
 }
 
 nav ul li {
     list-style: none;
     cursor: pointer;
     transition: color 0.3s ease;
+    border-radius: 1rem;
+    overflow: hidden;
+
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--white);
     font-size: 1.2rem;
+    width: 100% ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
 }
 
 nav ul li a:hover {
@@ -140,9 +146,7 @@ nav ul li a:hover {
 
 nav button {}
 
-button:hover {
-    background-color: rgb(220, 201, 156);
-}
+
 
 /* ========================= Header Section ==================== */
 .header_Container {
@@ -217,6 +221,14 @@ button:hover {
     translate: 0 -3px;
 }
 /* ========================= AboutMe ==================== */
+.about_Container{
+width: var(--wlg);
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 2rem;
+}
 .aboutSections{
     /* background-color: red; */
     width: 100%;
@@ -270,7 +282,7 @@ button:hover {
 .skills-section{
     width: 70%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding-top: 2rem;
 }
 .skill-card{
     display: flex;
@@ -284,6 +296,9 @@ button:hover {
     text-align: center;
 }
 /* ========================= Projects ==================== */
+#projects{
+padding-top: 2rem;
+}
 .projects_Container{
     background-color: var(--primary-color);
     height: 25rem;
@@ -381,12 +396,65 @@ button:hover {
     margin-top:15rem ;
 
 }
+/* ========================= Contact ==================== */
+form{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+input,textarea{
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 4px solid var(--primary-color);
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-family: "Crimson Text", serif;
+    resize: vertical;
+    background-color: transparent;
+}
+input:focus,textarea:focus{
+    
+}
+textarea{
+    min-height: 8rem;
+}
+form button{
+    width: 30%;
+    align-self: center;
+    padding: 0.7rem 1.5rem;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 5px 15px 0.5rem rgba(5, 5, 5, 0.105);
+    color: var(--primary-color);
+    border-radius: 1rem;
+}
+form button:hover {
+    background-color: rgb(3, 65, 103);
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    color: var(--cafee-color);
+
+}
+
+/* ========================= Footer ==================== */
+.footer_Container{
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--cafee-color);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+/* ========================= Media Queries ==================== */
 /*medium and small screen*/
 @media screen and (max-width: 950px) {
     body {
         /* background-color: red; */
     }
-    .container{
+    .about_Container{
     width: var(--wmd);
     }
     /* ======NavBar========= */
@@ -428,7 +496,6 @@ button:hover {
     nav ul li {
         width: 100%;
         text-align: center;
-        padding: 1rem 0;
         transition: all 0.3s ease;
         border-radius: 1rem;
 
@@ -530,7 +597,7 @@ button:hover {
     body {
         /* background-color: yellow; */
     }
-    .container{
+    .about_Container{
     width: var(--wsm);
     }
     /* ======Header========= */
@@ -613,6 +680,12 @@ button:hover {
     }
     .projectsCardsContainer .quizify{
     margin-top:0rem ;
+
+}
+/*contact*/
+form{
+    width: 100%;
+    max-width: 100%;
 
 }
 }
