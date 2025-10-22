@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
-export default function SkillsLoop({skills,reversed}) {
-  return (
-    <div>
-                  <Swiper
+export default function SkillsLoop({ skills, reversed }) {
+    return (
+        <div>
+            <Swiper
                 spaceBetween={0}
                 slidesPerView={4}
                 loop={true}
@@ -17,7 +17,7 @@ export default function SkillsLoop({skills,reversed}) {
                     delay: 0,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: false,
-                    reverseDirection :reversed
+                    reverseDirection: reversed
                 }}
                 modules={[Autoplay, FreeMode]}
                 className="mySwiper"
@@ -31,6 +31,6 @@ export default function SkillsLoop({skills,reversed}) {
                     </SwiperSlide>
                 ))}
             </Swiper>
-    </div>
-  )
+        </div>
+    )
 }

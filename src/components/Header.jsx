@@ -1,6 +1,5 @@
 import React from 'react'
 import EyeFollow from './EyeFollow'
-import ReflectionStyle from './ReflectionStyle'
 export default function Header() {
     return (
         <div className='header_Container'>

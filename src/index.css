@@ -92,7 +92,7 @@ button {
     align-items: center;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav {
@@ -279,6 +279,108 @@ button:hover {
     gap: 1rem;
     color: var(--primary-color);
 }
+.skill-name{
+    width: 100%;
+    text-align: center;
+}
+/* ========================= Projects ==================== */
+.projects_Container{
+    background-color: var(--primary-color);
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    margin: 10rem 0;
+}
+.projectsCardsContainer{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.projectsCardsContainer .project{
+    background-color: var(--cafee-color);
+    width: 26rem;
+    height: 26rem;
+    border-radius: 2rem;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.135);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.projectsCardsContainer .project .project_details{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -30rem;
+    transition: all 0.5s ease;
+
+}
+#visible{
+    top: 0rem;
+}
+.projectsCardsContainer .project span{
+    position: absolute;
+    top: 2rem;
+    right: 0rem;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    z-index: 2;
+    background-color:var(--cafee-color);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.projectsCardsContainer .project .project_details img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    /* opacity:0.9 ; */
+}
+.projectsCardsContainer .project .project_details button{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 90%;
+    box-shadow: 0 5px 15px 0.5rem rgba(5, 5, 5, 0.226);
+}
+
+.projectsCardsContainer .project .project_name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 1rem;
+}
+.projectsCardsContainer .project .project_desc{
+    padding: 0 1.2rem;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: justify;
+
+}
+.projectsCardsContainer .methaq{
+    margin-bottom:15rem ;
+
+}
+.projectsCardsContainer .quizify{
+    margin-top:15rem ;
+
+}
 /*medium and small screen*/
 @media screen and (max-width: 950px) {
     body {
@@ -398,6 +500,28 @@ button:hover {
     .skills-section{
         width: 90%;
     }
+    /*projects*/
+    .projects_Container{
+    height: 20rem;
+    }
+    .projectsCardsContainer .project{
+    width: 18rem;
+    height: 18rem;
+    gap: 1rem;
+    }
+    .projectsCardsContainer .methaq{
+    margin-bottom:8rem ;
+    }
+    .projectsCardsContainer .quizify{
+    margin-top:8rem ;
+    }
+    .projectsCardsContainer .project .project_name{
+    font-size: 1.2rem;
+    }
+    .projectsCardsContainer .project .project_desc{
+    font-size: 1rem;
+    line-height: 1.4rem;
+    }
 }
 
 /*mobile screen*/
@@ -472,10 +596,25 @@ button:hover {
     .aboutSections section{
         height: 13rem;
     }
-        /*skills*/
+    /*skills*/
     .skills-section{
         width: 100%;
     }
+    /*projects*/
+    .projectsCardsContainer{
+    flex-direction: column;
+    gap: 1.5rem;
+    }
+    .projectsCardsContainer .project{
+    width: 21rem;
+    }
+        .projectsCardsContainer .methaq{
+    margin-bottom:0rem ;
+    }
+    .projectsCardsContainer .quizify{
+    margin-top:0rem ;
+
+}
 }
 
 @keyframes shine {
