@@ -6,17 +6,25 @@
     --cafee-color: #decda7;
     --white: #e0e0e0;
     --light-gray: #b8b7b7;
-    --wlg:80%;
-    --wmd:95%;
-    --wsm:98%;
+    --wlg: 80%;
+    --wmd: 95%;
+    --wsm: 98%;
 }
+
+* {
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
 .logo {
     width: 7rem;
 }
+
 body {
     font-family: "Crimson Text", serif;
     background-color: var(--cafee-color);
 }
+
 button {
     padding: 0.5rem 1rem;
     background-color: var(--cafee-color);
@@ -27,10 +35,12 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 button:hover {
     background-color: rgb(220, 201, 156);
 }
-.title{
+
+.title {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -39,6 +49,7 @@ button:hover {
     text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.167);
     padding-top: 5rem;
 }
+
 .eye {
     position: relative;
     width: 2.8rem;
@@ -105,17 +116,19 @@ nav .navBar_button {
     /* font-size: 5rem; */
     color: var(--white);
     cursor: pointer;
-    display: flex  ;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 0.5rem;
 }
-nav .navBar_button .nbir{
+
+nav .navBar_button .nbir {
     display: flex;
     gap: 0.2rem;
 }
-nav .navBar_button .nbir div{
+
+nav .navBar_button .nbir div {
     background-color: var(--cafee-color);
     border-radius: 0.2rem;
     height: 0.3rem;
@@ -142,7 +155,7 @@ nav ul li a {
     text-decoration: none;
     color: var(--white);
     font-size: 1.2rem;
-    width: 100% ;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -230,16 +243,18 @@ nav button {}
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.137);
     translate: 0 -3px;
 }
+
 /* ========================= AboutMe ==================== */
-.about_Container{
-width: var(--wlg);
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding-top: 2rem;
+.about_Container {
+    width: var(--wlg);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
 }
-.aboutSections{
+
+.aboutSections {
     /* background-color: red; */
     width: 100%;
     padding: 2rem 0;
@@ -248,10 +263,11 @@ padding-top: 2rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
-        "education experience" 
+        "education experience"
         "technicalSkills technicalSkills";
 }
-.aboutSections section{
+
+.aboutSections section {
     background-color: var(--primary-color);
     border-radius: 1rem;
     padding: 1.5rem;
@@ -263,67 +279,80 @@ padding-top: 2rem;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr;
-    
+
 }
-.aboutSections section:hover{
+
+.aboutSections section:hover {
     box-shadow: 0 8px 20px 0.2rem rgba(0, 0, 0, 0.219);
     transform: translateY(-5px);
 }
-.aboutSections section h2{
+
+.aboutSections section h2 {
     color: var(--white);
     font-size: 1.8rem;
 }
-.aboutSections section p{
+
+.aboutSections section p {
     color: var(--light-gray);
     line-height: 1.6rem;
     font-size: .96rem;
 }
-.Education{
-    
+
+.Education {
+
     grid-area: education;
 }
-.Experience{
+
+.Experience {
     grid-area: experience;
 }
-.TechnicalSkills{
+
+.TechnicalSkills {
     grid-area: technicalSkills;
 }
+
 /* ========================= Skills ==================== */
-.skills-section{
+.skills-section {
     width: 70%;
     margin: 0 auto;
     padding-top: 2rem;
 }
-.skill-card{
+
+.skill-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     color: var(--primary-color);
 }
-.skill-name{
+
+.skill-name {
     width: 100%;
     text-align: center;
 }
+
 /* ========================= Projects ==================== */
-#projects{
-padding-top: 2rem;
+#projects {
+    padding-top: 2rem;
 }
-.projects_Container{
+
+.projects_Container {
     background-color: var(--primary-color);
     height: 25rem;
     display: flex;
     align-items: center;
     margin: 10rem 0;
 }
-.projectsCardsContainer{
+
+.projectsCardsContainer {
     width: 100%;
     /* background-color: red; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.projectsCardsContainer .project{
+
+.projectsCardsContainer .project {
     background-color: var(--cafee-color);
     width: 26rem;
     height: 26rem;
@@ -339,7 +368,8 @@ padding-top: 2rem;
     cursor: pointer;
     transition: all 0.5s ease;
 }
-.projectsCardsContainer .project .project_details{
+
+.projectsCardsContainer .project .project_details {
     background-color: var(--primary-color);
     width: 100%;
     height: 100%;
@@ -348,10 +378,12 @@ padding-top: 2rem;
     transition: all 0.5s ease;
 
 }
-#visible{
+
+#visible {
     top: 0rem;
 }
-.projectsCardsContainer .project span{
+
+.projectsCardsContainer .project span {
     position: absolute;
     top: 2rem;
     right: 0rem;
@@ -359,7 +391,7 @@ padding-top: 2rem;
     color: var(--primary-color);
     font-size: 1.5rem;
     z-index: 2;
-    background-color:var(--cafee-color);
+    background-color: var(--cafee-color);
     width: 3rem;
     height: 3rem;
     display: flex;
@@ -367,14 +399,16 @@ padding-top: 2rem;
     align-items: center;
     border-radius: 1rem;
 }
-.projectsCardsContainer .project .project_details img{
+
+.projectsCardsContainer .project .project_details img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 2rem;
     /* opacity:0.9 ; */
 }
-.projectsCardsContainer .project .project_details button{
+
+.projectsCardsContainer .project .project_details button {
     position: absolute;
     bottom: 1.5rem;
     left: 50%;
@@ -384,13 +418,14 @@ padding-top: 2rem;
     box-shadow: 0 5px 15px 0.5rem rgba(5, 5, 5, 0.226);
 }
 
-.projectsCardsContainer .project .project_name{
+.projectsCardsContainer .project .project_name {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-color);
     margin-top: 1rem;
 }
-.projectsCardsContainer .project .project_desc{
+
+.projectsCardsContainer .project .project_desc {
     padding: 0 1.2rem;
     color: var(--primary-color);
     font-size: 1.1rem;
@@ -398,16 +433,19 @@ padding-top: 2rem;
     text-align: justify;
 
 }
-.projectsCardsContainer .methaq{
-    margin-bottom:15rem ;
+
+.projectsCardsContainer .methaq {
+    margin-bottom: 15rem;
 
 }
-.projectsCardsContainer .quizify{
-    margin-top:15rem ;
+
+.projectsCardsContainer .quizify {
+    margin-top: 15rem;
 
 }
+
 /* ========================= Contact ==================== */
-form{
+form {
     width: 90%;
     margin: 0 auto;
     max-width: 40rem;
@@ -416,7 +454,8 @@ form{
     gap: 1.5rem;
 }
 
-input,textarea{
+input,
+textarea {
     width: 100%;
     padding: 0.8rem 1rem;
     border: 4px solid var(--primary-color);
@@ -426,13 +465,15 @@ input,textarea{
     resize: vertical;
     background-color: transparent;
 }
-input:focus,textarea:focus{
-    
-}
-textarea{
+
+input:focus,
+textarea:focus {}
+
+textarea {
     min-height: 8rem;
 }
-form button{
+
+form button {
     width: 30%;
     align-self: center;
     padding: 0.7rem 1.5rem;
@@ -442,6 +483,7 @@ form button{
     border-radius: 1rem;
     transition: all 0.3s ease;
 }
+
 form button:hover {
     background-color: rgb(3, 65, 103);
     scale: 1.05;
@@ -450,7 +492,7 @@ form button:hover {
 }
 
 /* ========================= Footer ==================== */
-.footer_Container{
+.footer_Container {
     width: 100%;
     background-color: var(--primary-color);
     color: var(--cafee-color);
@@ -459,35 +501,43 @@ form button:hover {
     font-size: 1rem;
     margin-top: 5rem;
 }
-.footer_Container p{
+
+.footer_Container p {
     border-top: solid 1px var(--light-gray);
     padding-top: 2rem;
     margin: 1rem;
     color: var(--light-gray);
 }
-footer{
+
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
 }
-footer .links,footer .contacts{
+
+footer .links,
+footer .contacts {
     margin: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
 }
-footer .links a,footer .contacts a{
+
+footer .links a,
+footer .contacts a {
     color: var(--cafee-color);
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
-footer .links a:hover{
+
+footer .links a:hover {
     color: var(--white);
 }
-footer .contacts a{
+
+footer .contacts a {
     background-color: var(--cafee-color);
     color: var(--primary-color);
     padding: 0.5rem;
@@ -498,15 +548,14 @@ footer .contacts a{
     align-items: center;
     border-radius: 50%;
 }
+
 /* ========================= Media Queries ==================== */
 /*medium and small screen*/
 @media screen and (max-width: 950px) {
     body {
         /* background-color: red; */
     }
-    .about_Container{
-    width: var(--wmd);
-    }
+
     /* ======NavBar========= */
     nav button {
         display: none;
@@ -609,35 +658,47 @@ footer .contacts a{
         top: 2.7rem;
         left: 0.1rem;
     }
+
     /*aboutme*/
-    .aboutSections{
+    .aboutSections {
         gap: 0.5rem;
     }
+
+    .about_Container {
+        width: var(--wmd);
+    }
+
     /*skills*/
-    .skills-section{
+    .skills-section {
         width: 90%;
     }
+
     /*projects*/
-    .projects_Container{
-    height: 20rem;
+    .projects_Container {
+        height: 20rem;
     }
-    .projectsCardsContainer .project{
-    width: 18rem;
-    height: 18rem;
-    gap: 1rem;
+
+    .projectsCardsContainer .project {
+        width: 18rem;
+        height: 18rem;
+        gap: 1rem;
     }
-    .projectsCardsContainer .methaq{
-    margin-bottom:8rem ;
+
+    .projectsCardsContainer .methaq {
+        margin-bottom: 8rem;
     }
-    .projectsCardsContainer .quizify{
-    margin-top:8rem ;
+
+    .projectsCardsContainer .quizify {
+        margin-top: 8rem;
     }
-    .projectsCardsContainer .project .project_name{
-    font-size: 1.2rem;
+
+    .projectsCardsContainer .project .project_name {
+        font-size: 1.2rem;
     }
-    .projectsCardsContainer .project .project_desc{
-    font-size: 1rem;
-    line-height: 1.4rem;
+
+    .projectsCardsContainer .project .project_desc {
+        font-size: 1rem;
+        line-height: 1.4rem;
     }
 }
 
@@ -647,17 +708,54 @@ footer .contacts a{
     body {
         /* background-color: yellow; */
     }
-    .about_Container{
-    width: var(--wsm);
+
+    .about_Container {
+        width: var(--wsm);
     }
+
+    /*nav*/
+    .nav_Container {
+        padding: 2rem 1rem;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
     /* ======Header========= */
     .header_Container {
-        height: 28rem;
+        height: 25rem;
     }
+
+    .header_Container .name {
+        font-size: 1.8rem;
+    }
+
+    .Front-end,
+    .developer {
+        font-size: 2.4rem;
+    }
+
+    .Front-end span {
+        top: 1.4rem;
+        right: 0.2rem;
+    }
+
+
+    .developer span {
+        top: 1.4rem;
+        left: 0.03rem;
+    }
+
+    .header_Container button {
+        font-size: 1.3rem;
+        padding: 0.5rem 1.5rem;
+    }
+
     /*Eye*/
     .eye {
-        width: 1.1rem;
-        height: 1.3rem;
+        width: 1rem;
+        height: 1.2rem;
     }
 
     .pupil-container {
@@ -675,73 +773,51 @@ footer .contacts a{
         height: 3px;
 
     }
-    /*nav*/
-    nav ul {
-        width: 100%;
-    }
-    /*Header*/
-    .header_Container .name {
-        font-size: 2rem;
-    }
 
-    .Front-end {
-        font-size: 2.7rem;
-    }
 
-    .Front-end span {
-        top: 1.6rem;
-        right: 0.25rem;
-    }
-
-    .developer {
-        font-size: 2.7rem;
-    }
-
-    .developer span {
-        top: 1.6rem;
-        left: 0rem;
-    }
-
-    .header_Container button {
-        font-size: 1.3rem;
-        padding: 0.5rem 1.5rem;
-    }
     /*aboutme*/
-    .aboutSections{
+    .aboutSections {
         grid-template-columns: 1fr;
         grid-template-areas:
-            "education" 
-            "experience" 
+            "education"
+            "experience"
             "technicalSkills";
     }
-    .aboutSections section{
+
+    .aboutSections section {
         height: 13rem;
     }
+
     /*skills*/
-    .skills-section{
+    .skills-section {
         width: 100%;
     }
+
     /*projects*/
-    .projectsCardsContainer{
-    flex-direction: column;
-    gap: 1.5rem;
+    .projectsCardsContainer {
+        flex-direction: column;
+        gap: 1.5rem;
     }
-    .projectsCardsContainer .project{
-    width: 21rem;
-    }
-        .projectsCardsContainer .methaq{
-    margin-bottom:0rem ;
-    }
-    .projectsCardsContainer .quizify{
-    margin-top:0rem ;
 
-}
-/*contact*/
-form{
-    width: 100%;
-    max-width: 100%;
+    .projectsCardsContainer .project {
+        width: 21rem;
+    }
 
-}
+    .projectsCardsContainer .methaq {
+        margin-bottom: 0rem;
+    }
+
+    .projectsCardsContainer .quizify {
+        margin-top: 0rem;
+
+    }
+
+    /*contact*/
+    form {
+        width: 100%;
+        max-width: 100%;
+
+    }
 }
 
 @keyframes shine {
