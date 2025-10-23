@@ -16,14 +16,32 @@ export default function NavBar() {
     return (
         <div className='nav_Container'>
         <nav>
-            <div className='logo'>Logo</div>
+            <div className='logo'>
+                <a href="#header"><img src="/logo.svg" alt="" /></a>
+            </div>
             <ul onClick={()=>{set_ul_active(!ul_active)}} className={ul_active?'ul_active':''}>
+                <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <span onClick={()=>{set_ul_active(!ul_active)}}  className='navBar_button'>=</span>
+            <span 
+            onClick={()=>{set_ul_active(!ul_active)}}  
+            className='navBar_button'>
+                <div className="nbir">
+                    <div className="fs" style={{flex:ul_active?'1':'3'}}></div>
+                    <div className="ss" style={{flex:ul_active?'3':'1'}}></div>
+                </div>
+                <div className="nbir">
+                    <div className="fs" style={{flex:ul_active?'1':'3'}}></div>
+                    <div className="ss" style={{flex:ul_active?'3':'1'}}></div>
+                </div>
+                <div className="nbir">
+                    <div className="fs" style={{flex:ul_active?'1':'3'}}></div>
+                    <div className="ss" style={{flex:ul_active?'3':'1'}}></div>
+                </div>
+            </span>
             <button><a href="../youssefMagdyResume.pdf" download>Resume</a></button>
         </nav>
         </div>

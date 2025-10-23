@@ -9,7 +9,7 @@ export default function Contact() {
         // <Toast message={'done'}/>
     }
     return (
-        <div className='p-2' id='contact'>
+        <div className='p-2 py-4' id='contact'>
             {state.succeeded && (
                 <Toast
                     message="Message sent successfully!"
