@@ -94,7 +94,7 @@ button:hover {
 /* ========================= NavBar ==================== */
 .nav_Container {
     background-color: var(--primary-color);
-    background-color: green;
+    background-color: rgb(128, 0, 94);
     height: 6rem;
     border-radius: 0 0 1rem 1rem;
     padding: 2rem;
@@ -646,7 +646,7 @@ footer .contacts a {
     .Front-end span {
         /* top: 2.7rem; */
         /* right: 0.34rem; */
-            right: 2.7%;
+            right: 2.8%;
             top: 38%;
     }
 
@@ -657,7 +657,7 @@ footer .contacts a {
     .developer span {
         /* top: 2.7rem; */
         /* left: 0.1rem; */
-        left: 0.7%;
+        left: 0.8%;
             top: 38%;
     }
 
