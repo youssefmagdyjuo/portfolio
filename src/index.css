@@ -94,7 +94,6 @@ button:hover {
 /* ========================= NavBar ==================== */
 .nav_Container {
     background-color: var(--primary-color);
-    background-color: rgb(19, 165, 46);
     height: 6rem;
     border-radius: 0 0 1rem 1rem;
     padding: 2rem;
@@ -612,10 +611,6 @@ footer .contacts a {
         color: var(--primary-color);
     }
 
-    /* ======Header========= */
-    .header_Container {
-        height: 30rem;
-    }
 
     /* ======Eye========= */
     .eye {
@@ -637,6 +632,10 @@ footer .contacts a {
         width: 5px;
         height: 5px;
 
+    }
+    /* ======Header========= */
+    .header_Container {
+        height: 30rem;
     }
 
     .Front-end {
@@ -741,12 +740,14 @@ footer .contacts a {
     .Front-end span {
         /* top: 1.4rem; */
         /* right: 0.2rem; */
+            right: 3.2%;
     }
 
 
     .developer span {
         /* top: 1.4rem; */
         /* left: 0.03rem; */
+        left: 1.1%;
     }
 
     .header_Container button {
