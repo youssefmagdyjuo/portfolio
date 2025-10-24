@@ -94,6 +94,7 @@ button:hover {
 /* ========================= NavBar ==================== */
 .nav_Container {
     background-color: var(--primary-color);
+    background-color: red;
     height: 6rem;
     border-radius: 0 0 1rem 1rem;
     padding: 2rem;
