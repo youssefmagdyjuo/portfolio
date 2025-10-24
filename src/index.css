@@ -54,7 +54,7 @@ button:hover {
 .eye {
     position: relative;
     width: 2.8rem;
-    height: 3.5rem;
+    height: 3.7rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -216,7 +216,7 @@ nav button {}
 
 .Front-end span {
     position: absolute;
-    top: 41%;
+    top: 40%;
     right: 1.9%;
 
 }
@@ -229,7 +229,7 @@ nav button {}
 
 .developer span {
     position: absolute;
-    top: 41%;
+    top: 40%;
     left: 0.6%;
 }
 
